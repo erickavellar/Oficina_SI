@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="0.10.0" />
+    <PackageReference Include="Bunifu.Charts.WinForms" Version="1.0.0" />
+    <PackageReference Include="Bunifu.Dataviz.WinForms" Version="2.1.5" />
+    <PackageReference Include="Bunifu.UI.WinForms" Version="5.0.1" />
+    <PackageReference Include="Google.Apis.Calendar.v3" Version="1.51.0.2291" />
+    <PackageReference Include="Guna.UI2.WinForms" Version="2.0.1.4" />
+    <PackageReference Include="Intersoft.Crosslight.UI" Version="6.0.5000.975" />
+    <PackageReference Include="MetroFramework" Version="1.2.0.3" />
+    <PackageReference Include="MetroModernUI" Version="1.4.0" />
+    <PackageReference Include="Syncfusion.Xamarin.Buttons" Version="19.1.0.56" />
+    <PackageReference Include="Xander.UI.Web" Version="0.1.19" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Biblioteca\Biblioteca.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\..\Programação SQL\itextsharp\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa">
+      <HintPath>..\..\..\..\Programação SQL\itextsharp\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xtra">
+      <HintPath>..\..\..\..\Programação SQL\itextsharp\itextsharp.xtra.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
